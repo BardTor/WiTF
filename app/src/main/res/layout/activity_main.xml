@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/vegan_secondary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_activity_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/main_activity_text_bar"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="W E L C O M E  T O  W I T F"
+            android:textSize="20sp"
+            android:elevation="1dp"
+            android:background="@drawable/radius_recipe_top"
+            android:textColor="@color/tool_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/main_activity_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_cropped"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/scan_product_button"
+        android:background="@drawable/radius_recipe_top"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/scan_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_bar" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/qr_icon"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scan_product_button"
+        app:layout_constraintStart_toStartOf="@+id/scan_product_button"
+        app:layout_constraintTop_toTopOf="@+id/scan_product_button" />
+
+
+    <Button
+        android:id="@+id/browse_products_button"
+        android:background="@drawable/radius_recipe_top"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Browse Products"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scan_product_button" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/eye_icon"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/browse_products_button"
+        app:layout_constraintStart_toStartOf="@+id/browse_products_button"
+        app:layout_constraintTop_toTopOf="@+id/browse_products_button" />
+
+    <Button
+        android:id="@+id/seek_recipes_button"
+        android:background="@drawable/radius_recipe_top"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Seek Recipes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/browse_products_button" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/view_icon"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seek_recipes_button"
+        app:layout_constraintStart_toStartOf="@+id/seek_recipes_button"
+        app:layout_constraintTop_toTopOf="@+id/seek_recipes_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

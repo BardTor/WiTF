@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/vegan_secondary">
+
+            <RelativeLayout
+                android:background="@drawable/radius_recipe_top"
+                android:id="@+id/non_expandable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+            <TextView
+                android:id="@+id/recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipe Name"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/reipe_type_id"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/vegan_icon"
+                    android:layout_alignParentEnd="true">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/ingredients_available_unavailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recipe_name"
+                    android:paddingTop="8dp"
+                    android:text="Av/Total"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/prep_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ingredients_available_unavailable"
+                    android:paddingTop="4dp"
+                    android:text="Prep Time"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/recipe_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prep_time"
+                    android:paddingTop="4dp"
+                    android:text="Short Desc."
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:id="@+id/view_button"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/display_method_icon"
+                    android:layout_below="@id/recipe_description"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/expandable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/non_expandable_layout"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/radius_recipe_bottom"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/available_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available List"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/unavailable_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/available_products"
+                    android:paddingTop="4dp"
+                    android:text="Unavailable List"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/recipe_details"
+                    android:paddingTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/unavailable_products"
+                    android:text="Recipe Details"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/save_button"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/download_icon"
+                    android:layout_below="@+id/recipe_details"/>
+
+                <ImageButton
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/cook_button"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/recipe_details"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/pot_icon" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

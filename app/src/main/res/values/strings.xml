@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WiTF</string>
+    <string name="scan_product">Scan Product/Recipe</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="confirmButton">Confirm</string>
+    <string name="question_text">Are you sure?</string>
+    <string name="no_text">No</string>
+    <string name="yes_text">yes</string>
+    <string name="update_button">Update</string>
+</resources>

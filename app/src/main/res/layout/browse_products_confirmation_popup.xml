@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/vegan_secondary"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/text_question_alert_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/radius_recipe_top"
+                android:padding="15dp"
+                android:text="@string/question_text"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/confirmation_yes_button_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/radius_recipe_top"
+                android:text="@string/yes_text" />
+
+
+            <Button
+                android:id="@+id/confirmation_no_button_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/radius_recipe_top"
+                android:text="@string/no_text" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

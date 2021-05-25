@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/vegan_secondary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipesActivity">
+
+    <RelativeLayout
+        android:id="@+id/recipes_selection_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/recipes_selection_text_bar"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="R E C I P E S  T Y P E S"
+            android:textSize="20sp"
+            android:elevation="1dp"
+            android:background="@drawable/radius_recipe_top"
+            android:textColor="@color/tool_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/recipes_selection_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_cropped"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/meat_section_button_ar"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/radius_recipe_top"
+        android:text="Meat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipes_selection_bar"/>
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/meat_icon"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/meat_section_button_ar"
+        app:layout_constraintStart_toStartOf="@+id/meat_section_button_ar"
+        app:layout_constraintTop_toTopOf="@+id/meat_section_button_ar" />
+
+    <Button
+        android:id="@+id/vegan_section_button_ar"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/radius_recipe_top"
+        android:text="vegan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meat_section_button_ar" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/vegan_icon"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vegan_section_button_ar"
+        app:layout_constraintStart_toStartOf="@+id/vegan_section_button_ar"
+        app:layout_constraintTop_toTopOf="@+id/vegan_section_button_ar" />
+
+
+    <Button
+        android:id="@+id/vegetarian_section_button_ar"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/radius_recipe_top"
+        android:text="Vegetarian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vegan_section_button_ar" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/vegetarian_icon"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vegetarian_section_button_ar"
+        app:layout_constraintStart_toStartOf="@+id/vegetarian_section_button_ar"
+        app:layout_constraintTop_toTopOf="@+id/vegetarian_section_button_ar" />
+
+    <Button
+        android:id="@+id/all_section_button_ar"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/radius_recipe_top"
+        android:text="All"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vegetarian_section_button_ar" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/all_icon"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/all_section_button_ar"
+        app:layout_constraintStart_toStartOf="@+id/all_section_button_ar"
+        app:layout_constraintTop_toTopOf="@+id/all_section_button_ar" />
+
+    <Button
+        android:id="@+id/offline_section_button_ar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/radius_recipe_top"
+        android:text="Favourites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all_section_button_ar" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/favourites_icon"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/offline_section_button_ar"
+        app:layout_constraintStart_toStartOf="@+id/offline_section_button_ar"
+        app:layout_constraintTop_toTopOf="@+id/offline_section_button_ar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
